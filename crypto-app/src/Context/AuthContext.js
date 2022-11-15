@@ -33,5 +33,5 @@ export const  AuthContextProvider=({children})=>{
   )
 };
 export const  AuthUser=()=>{
-  return useContext(userContext)
+return useContext(userContext)
 }

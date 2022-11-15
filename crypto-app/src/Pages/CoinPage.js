@@ -36,22 +36,22 @@ const CoinPage = () => {
                     </Sparklines>
                 </div>
                 <div className="flex justify-between py-4">
-                    <div>
+                    <div className='text-center'>
                         <p className='text-gray-500 text-sm'>Market Cap</p>
                         {coinInfo.market_data?.market_cap?(<p>${coinInfo.market_data.market_cap.usd.toLocaleString()}</p>):null}
                     </div>
-                    <div>
+                    <div className='text-center'>
                         <p className='text-gray-500 text-sm'>volume(24)</p>
                         {coinInfo.market_data?.total_volume?(<p>${coinInfo.market_data.total_volume.usd.toLocaleString()}</p>):null}
                     </div>
                 </div>
                 <div className='flex justify-between py-4'>
-                    <div>
+                    <div className='text-center'>
                         <p className='text-gray-500 text-sm'>24h High</p>
                         {coinInfo.market_data?.high_24h?(<p>${coinInfo.market_data.high_24h.usd.toLocaleString()}</p>):null}
 
                     </div>
-                    <div>
+                    <div className='text-center'>
                         <p className="text-gray-500 text-sm">24h low</p>
                         {coinInfo.market_data?.low_24h?(<p>${coinInfo.market_data.low_24h.usd.toLocaleString()}</p>):null}
 

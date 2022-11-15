@@ -39,7 +39,7 @@ const SavedCoin = () => {
             </thead>
             <tbody>
                 {coins?.map(coin=>(
-                    <tr ky={coin?.id} className="h-[60px] overflow-hidden">
+                    <tr key={coin?.id} className="h-[60px] overflow-hidden">
                         <td>{coin?.rank}</td>
                         <td>
                             <Link to={`/coin/${coin?.id}`}>
