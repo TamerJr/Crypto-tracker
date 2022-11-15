@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import { Sparklines, SparklinesLine } from 'react-sparklines'
-import { AuthUser } from '../Context/context'
+import { AuthUser } from '../Context/AuthContext'
 import {db} from "../firebase"
 import { arrayUnion ,doc,updateDoc} from 'firebase/firestore'
 const CoinData = ({coin}) => {

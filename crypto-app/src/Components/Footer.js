@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiOutlineInstagram} from "react-icons/ai"
-import ToggeleTheme from './ToggeleTheme'
+import ToggleTheme from './ToggleTheme'
 import {FaTwitter,FaGithub,FaFacebook,FaReddit, FaTiktok} from "react-icons/fa"
 import { Link } from 'react-router-dom'
 
@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className='w-full flex justify-end'>
                     <div className='w-full md:w-[300px] py-4 relative'>
                         <div className='flex justify-center md:justify-end py-4 md:py-0 md:pb-4 mt-[-1rem]'>
-                            <ToggeleTheme/>
+                            <ToggleTheme/>
                         </div>
                         <p className='text-center md:text-right'><Link to="/signup"><span className='text-blue-400 font-semibold'>Sign up</span></Link> to catch crypto news </p>
                     

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import Toggeler from './Toggeler'
+import ToggleTheme from './ToggleTheme'
 import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai"
 import { AuthUser } from '../Context/AuthContext'
 import { FaPersonBooth } from 'react-icons/fa'
@@ -27,7 +27,7 @@ const NavBar = () => {
             </h1>
         </Link>
         <div className='hidden md:block'>
-            <Toggeler/>
+            <ToggleTheme/>
         </div>
         {user?.email ?(
             <div className=' w-[100px] hidden md:flex justify-between items-center'>
@@ -55,7 +55,7 @@ const NavBar = () => {
                     <Link to="/account"><FaPersonBooth className='text-xl'/> </Link>
                 </li>
                 <li className='border-b py-6'>
-                    <Toggeler/>
+                    <ToggleTheme/>
                 </li>
             </ul>
             <div className=' flex flex-col w-full p-4 '>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AiFillLock, AiOutlineMail } from 'react-icons/ai'
 import { Link , useNavigate} from 'react-router-dom'
-import {AuthUser} from "../Context/context"
+import {AuthUser} from "../Context/AuthContext"
 
 const SignUp = () => {
   const {signUp}=AuthUser()

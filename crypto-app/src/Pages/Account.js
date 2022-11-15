@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import SavedCoin from '../Components/SavedCoin'
-import { AuthUser } from '../Context/context'
+import { AuthUser } from '../Context/AuthContext'
 
 const Account = () => {
   const {user,logOut}=AuthUser()
