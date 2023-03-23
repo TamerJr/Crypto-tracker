@@ -49,7 +49,7 @@ const SavedCoin = () => {
                                         <p className='hidden sm:table-cell'>
                                             {coin?.name}
                                         </p>
-                                        <p className='text-gray-500 text-left text-sm'>{coin?.symbol.toUpperCase()}</p>
+                                        <p className='text-gray-500 text-left text-sm'>{coin?.symbol?.toUpperCase()}</p>
                                     </div>
                                 </div>
                             </Link>

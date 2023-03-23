@@ -18,10 +18,10 @@ const Trending = () => {
                 className='rounded-div flex justify-between p-4 hover:scale-105 ease-in-out duration-300'>
                     <div className='flex w-full items-center justify-between'>
                         <div className='flex'>
-                            <img src={coin?.item.small} alt={coin?.item.name}/>
+                            <img src={coin?.item.small} alt={coin?.item?.name}/>
                             <div className='ml-4'>
-                            <p className='font-bold'>{coin?.item.name}</p>
-                            <p >{coin?.item.symbol}</p>
+                            <p className='font-bold'>{coin?.item?.name}</p>
+                            <p >{coin?.item?.symbol}</p>
                             </div>
                         </div>
                         <div className='flex items-center'>

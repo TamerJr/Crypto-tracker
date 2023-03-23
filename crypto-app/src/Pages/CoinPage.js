@@ -38,22 +38,22 @@ const CoinPage = () => {
                 <div className="flex justify-between py-4">
                     <div className='text-center'>
                         <p className='text-gray-500 text-sm'>Market Cap</p>
-                        {coinInfo.market_data?.market_cap?(<p>${coinInfo.market_data.market_cap.usd.toLocaleString()}</p>):null}
+                        {coinInfo.market_data?.market_cap?(<p>${coinInfo?.market_data.market_cap.usd?.toLocaleString()}</p>):null}
                     </div>
                     <div className='text-center'>
                         <p className='text-gray-500 text-sm'>volume(24)</p>
-                        {coinInfo.market_data?.total_volume?(<p>${coinInfo.market_data.total_volume.usd.toLocaleString()}</p>):null}
+                        {coinInfo.market_data?.total_volume?(<p>${coinInfo?.market_data.total_volume?.usd?.toLocaleString()}</p>):null}
                     </div>
                 </div>
                 <div className='flex justify-between py-4'>
                     <div className='text-center'>
                         <p className='text-gray-500 text-sm'>24h High</p>
-                        {coinInfo.market_data?.high_24h?(<p>${coinInfo.market_data.high_24h.usd.toLocaleString()}</p>):null}
+                        {coinInfo.market_data?.high_24h?(<p>${coinInfo?.market_data.high_24h?.usd?.toLocaleString()}</p>):null}
 
                     </div>
                     <div className='text-center'>
                         <p className="text-gray-500 text-sm">24h low</p>
-                        {coinInfo.market_data?.low_24h?(<p>${coinInfo.market_data.low_24h.usd.toLocaleString()}</p>):null}
+                        {coinInfo.market_data?.low_24h?(<p>${coinInfo?.market_data.low_24h?.usd?.toLocaleString()}</p>):null}
 
                     </div>
                 </div>
@@ -63,45 +63,45 @@ const CoinPage = () => {
                 <div className='flex justify-between py-4'>
                     <div>
                         <p className='text-sm text-gray-500'>Market Rank</p>
-                        {coinInfo.market_cap_rank}
+                        {coinInfo?.market_cap_rank}
                     </div>
                     <div>
                         <p className='text-sm text-gray-500'>
                             Hashing Algorithm
                         </p>
-                        {coinInfo.hashing_algorithm ?(<p>{coinInfo.hashing_algorithm}</p>):null}
+                        {coinInfo?.hashing_algorithm ?(<p>{coinInfo?.hashing_algorithm}</p>):null}
                     </div>
                     <div>
                         <p className='text-sm text-gray-500'>Trust Score</p>
-                        {coinInfo.tickers ? <p>{coinInfo.liquidity_score.toFixed(2)}</p> :null}
+                        {coinInfo?.tickers ? <p>{coinInfo?.liquidity_score?.toFixed(2)}</p> :null}
                     </div>
                 </div>
                 <div className='flex justify-between py-4'>
                     <div >
                         <p className='text-sm text-gray-500'> Price Change (24h)</p>
-                        {coinInfo.market_data ? (<p>{coinInfo.market_data.price_change_percentage_24h.toFixed(2)}</p>):null}
+                        {coinInfo?.market_data ? (<p>{coinInfo?.market_data?.price_change_percentage_24h?.toFixed(2)}</p>):null}
                     </div>
                     <div className='text-sm text-gray-500'>
                         <p> Price Change (7d)</p>
-                        {coinInfo.market_data ? (<p>{coinInfo.market_data.price_change_percentage_7d.toFixed(2)}</p>):null}
+                        {coinInfo?.market_data ? (<p>{coinInfo?.market_data?.price_change_percentage_7d?.toFixed(2)}</p>):null}
                     </div>
                     <div className='text-sm text-gray-500'>
                         <p> Price Change (14d)</p>
-                        {coinInfo.market_data ? (<p>{coinInfo.market_data.price_change_percentage_14d.toFixed(2)}</p>):null}
+                        {coinInfo?.market_data ? (<p>{coinInfo?.market_data?.price_change_percentage_14d?.toFixed(2)}</p>):null}
                     </div>
                 </div>
                 <div className='flex justify-between py-4'>
                     <div>
                         <p className='text-sm text-gray-500'> Price Change (30d)</p>
-                        {coinInfo.market_data ? (<p>{coinInfo.market_data.price_change_percentage_30d.toFixed(2)}</p>):null}
+                        {coinInfo?.market_data ? (<p>{coinInfo?.market_data?.price_change_percentage_30d?.toFixed(2)}</p>):null}
                     </div>
                     <div>
                         <p className='text-sm text-gray-500'> Price Change (60d)</p>
-                        {coinInfo.market_data ? (<p>{coinInfo.market_data.price_change_percentage_60d.toFixed(2)}</p>):null}
+                        {coinInfo?.market_data ? (<p>{coinInfo?.market_data?.price_change_percentage_60d?.toFixed(2)}</p>):null}
                     </div>
                     <div>
                         <p className='text-sm text-gray-500'> Price Change (1y)</p>
-                        {coinInfo.market_data ? (<p>{coinInfo.market_data.price_change_percentage_1y.toFixed(2)}</p>):null}
+                        {coinInfo?.market_data ? (<p>{coinInfo?.market_data?.price_change_percentage_1y?.toFixed(2)}</p>):null}
                     </div>
                 </div>
                 <div className='flex justify-around p-8 text-amber-500 text-lg '>
